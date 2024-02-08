@@ -1,8 +1,9 @@
 {
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["./js/content.js"]
+      "matches": ["*://*/*"],
+      "js": ["./js/content.js"],
+      "include_globs": ["*://*rezka*/*"]
     }
   ],
   "browser_action": {
@@ -21,15 +22,7 @@
   "manifest_version": 2,
   "name": "__MSG_name__",
   "options_page": "popup.html?options=1",
-  "permissions": [
-    "activeTab",
-    "cookies",
-    "clipboardWrite",
-    "storage",
-    "background",
-    "<all_urls>",
-    "tabs"
-  ],
+  "permissions": ["activeTab"],
   "short_name": "__MSG_name__",
   "update_url": "https://clients2.google.com/service/update2/crx",
   "version": "1.1"

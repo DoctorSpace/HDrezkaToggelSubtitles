@@ -1,7 +1,29 @@
+*{
+  margin: 0;
+}
+
+
 body {
+  color: aliceblue;
   float: left;
-  width: 50px;
-  height: 50px;
-  margin: 5px;
-  background-color: rgba(225, 238, 255, 0.132);
+  width: 190px;
+  margin: 20px 16px;
+  background-color: #171717;
+}
+
+h1 {
+  color: rgb(84, 172, 250);
+  font-size: 15px;
+  margin-bottom: 14px;
+}
+
+p{
+  font-size: 12px;
+  margin: 0 0 10px 0;
+}
+
+a {
+  color: rgb(117, 117, 117);
+  text-decoration: none;
+  float: right;
 }
